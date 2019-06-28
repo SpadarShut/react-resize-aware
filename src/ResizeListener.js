@@ -26,10 +26,9 @@ export default ({
   useOnResize(ref, () => onResize(ref));
 
   return (
-    <object
-      type="text/html"
+    <iframe
       style={style}
-      data="about:blank"
+      src="about:blank"
       ref={ref}
       aria-hidden={true}
       aria-label="resize-listener"
